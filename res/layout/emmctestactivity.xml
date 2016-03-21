@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="0.0dip">
+        <ToggleButton android:checked="true" android:layout_gravity="left" android:id="@id/sleep_resume_test" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:textOn="@string/emmctest_sleepresume" android:textOff="@string/emmctest_sleepresume" android:layout_weight="0.2" />
+        <ToggleButton android:checked="true" android:layout_gravity="left" android:id="@id/randomwrite_test" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:textOn="@string/emmctest_randomwrite" android:textOff="@string/emmctest_randomwrite" android:layout_weight="0.2" />
+        <ToggleButton android:checked="true" android:layout_gravity="left" android:id="@id/write_test" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:textOn="@string/emmctest_write" android:textOff="@string/emmctest_write" android:layout_weight="0.2" />
+        <ToggleButton android:checked="true" android:layout_gravity="left" android:id="@id/swreset_test" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:textOn="@string/emmctest_swreset" android:textOff="@string/emmctest_swreset" android:layout_weight="0.2" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip">
+        <TextView android:textSize="15.0dip" android:gravity="right" android:layout_gravity="center" android:id="@id/textview_repeat" android:layout_width="110.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/emmctest_repeat" />
+        <EditText android:textSize="15.0dip" android:layout_gravity="center" android:id="@id/repeat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:inputType="numberSigned" android:imeOptions="actionDone" />"
+    </LinearLayout>
+    <LinearLayout android:id="@id/sleep_time_layout" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip">
+        <TextView android:textSize="15.0dip" android:gravity="right" android:layout_gravity="center" android:id="@id/sleep_time_textview" android:layout_width="110.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/emmctest_sleep_time" />
+        <RadioGroup android:layout_gravity="center" android:orientation="horizontal" android:id="@id/sleep_time_radiogroup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:textSize="15.0sp" android:gravity="center" android:id="@id/sleep_time_10_sec" android:checked="true" android:text="@string/emmctest_time_10_sec" android:layout_weight="1.0" />
+            <RadioButton android:textSize="15.0sp" android:gravity="center" android:id="@id/sleep_time_20_sec" android:text="@string/emmctest_time_20_sec" android:layout_weight="1.0" />
+            <RadioButton android:textSize="15.0sp" android:gravity="center" android:id="@id/sleep_time_30_sec" android:text="@string/emmctest_time_30_sec" android:layout_weight="1.0" />
+            <RadioButton android:textSize="15.0sp" android:gravity="center" android:id="@id/sleep_time_custom" android:text="@string/emmctest_time_custom" android:layout_weight="1.0" />
+        </RadioGroup>
+        <EditText android:textSize="15.0dip" android:layout_gravity="center" android:id="@id/sleep_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:inputType="numberSigned" android:imeOptions="flagNoExtractUi"/>
+    </LinearLayout>
+    <LinearLayout android:id="@id/wakeup_time_layout" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip">
+        <TextView android:textSize="15.0dip" android:gravity="right" android:layout_gravity="center" android:id="@id/wakeup_time_textview" android:layout_width="110.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/emmctest_wakeup_time" />
+        <RadioGroup android:layout_gravity="center" android:orientation="horizontal" android:id="@id/wakeup_time_radiogroup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:textSize="15.0sp" android:gravity="center" android:id="@id/wakeup_time_1_sec" android:text="@string/emmctest_time_1_sec" android:layout_weight="1.0" />
+            <RadioButton android:textSize="15.0sp" android:gravity="center" android:id="@id/wakeup_time_5_sec" android:text="@string/emmctest_time_5_sec" android:layout_weight="1.0" />
+            <RadioButton android:textSize="15.0sp" android:gravity="center" android:id="@id/wakeup_time_10_sec" android:checked="true" android:text="@string/emmctest_time_10_sec" android:layout_weight="1.0" />
+            <RadioButton android:textSize="15.0sp" android:gravity="center" android:id="@id/wakeup_time_custom" android:text="@string/emmctest_time_custom" android:layout_weight="1.0" />
+        </RadioGroup>
+        <EditText android:textSize="15.0dip" android:layout_gravity="center" android:id="@id/wakeup_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:inputType="numberSigned" android:imeOptions="flagNoExtractUi"/>
+    </LinearLayout>
+    <LinearLayout android:id="@id/write_size_layout" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:visibility="invisible">
+        <TextView android:textSize="15.0dip" android:gravity="right" android:layout_gravity="center" android:id="@id/write_size_textview" android:layout_width="110.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/emmctest_write_size" />
+        <RadioGroup android:layout_gravity="center" android:orientation="horizontal" android:id="@id/write_size_radiogroup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:textSize="15.0sp" android:gravity="center" android:id="@id/write_size_1024mb" android:text="@string/emmctest_write_size_1024mb" android:layout_weight="1.0" android:checked="true" />
+            <RadioButton android:textSize="15.0sp" android:gravity="center" android:id="@id/write_size_2048mb" android:text="@string/emmctest_write_size_2048mb" android:layout_weight="1.0" />
+            <RadioButton android:textSize="15.0sp" android:gravity="center" android:id="@id/write_size_custom" android:text="@string/emmctest_write_size_custom" android:layout_weight="1.0" />
+        </RadioGroup>
+        <EditText android:textSize="15.0dip" android:layout_gravity="center" android:id="@id/write_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:inputType="numberSigned" android:imeOptions="flagNoExtractUi"/>
+    </LinearLayout>
+    <LinearLayout android:id="@id/swreset_time_layout" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip" android:visibility="invisible">
+        <TextView android:textSize="15.0dip" android:gravity="right" android:layout_gravity="center" android:id="@id/swreset_time_textview" android:layout_width="110.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/emmctest_swreset_time" />
+        <RadioGroup android:layout_gravity="center" android:orientation="horizontal" android:id="@id/swreset_time_radiogroup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:textSize="15.0sp" android:gravity="center" android:id="@id/swreset_time_1min" android:text="@string/emmctest_swreset_time_1min" android:layout_weight="1.0" android:checked="true" />
+            <RadioButton android:textSize="15.0sp" android:gravity="center" android:id="@id/swreset_time_2min" android:text="@string/emmctest_swreset_time_2min" android:layout_weight="1.0" />
+            <RadioButton android:textSize="15.0sp" android:gravity="center" android:id="@id/swreset_time_3min" android:text="@string/emmctest_swreset_time_3min" android:layout_weight="1.0" />
+            <RadioButton android:textSize="15.0sp" android:gravity="center" android:id="@id/swreset_time_custom" android:text="@string/emmctest_swreset_time_custom" android:layout_weight="1.0" />
+        </RadioGroup>
+        <EditText android:textSize="15.0dip" android:layout_gravity="center" android:id="@id/swreset_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:inputType="numberSigned" android:imeOptions="flagNoExtractUi"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dip">
+        <TextView android:textSize="15.0dip" android:gravity="right" android:layout_gravity="center" android:id="@id/textview_repeated" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/emmctest_repeated" />
+        <TextView android:textSize="15.0dip" android:layout_gravity="center" android:id="@id/repeated" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+        <ToggleButton android:visibility="gone" android:checked="false" android:layout_gravity="left" android:id="@id/autorun" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:textOn="@string/autorun" android:textOff="@string/autorun" android:layout_weight="0.2" />
+        <ToggleButton android:checked="false" android:layout_gravity="left" android:id="@id/start_stop" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:textOn="@string/emmctest_stop" android:textOff="@string/emmctest_start" android:layout_weight="0.2" />
+    </LinearLayout>
+</LinearLayout>

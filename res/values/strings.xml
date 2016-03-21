@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">eMMC Test</string>
+    <string name="emmctest_title">eMMC Test</string>
+    <string name="emmctest_sleep_time">Sleep Time(s):</string>
+    <string name="emmctest_wakeup_time">Wakeup Time(s):</string>
+    <string name="emmctest_write_size">File Size(MB):</string>
+    <string name="emmctest_swreset_time">Interval Time(min):</string>
+    <string name="emmctest_time_1_sec">1 Sec</string>
+    <string name="emmctest_time_5_sec">5 Sec</string>
+    <string name="emmctest_time_10_sec">10 Sec</string>
+    <string name="emmctest_time_20_sec">20 Sec</string>
+    <string name="emmctest_time_30_sec">30 Sec</string>
+    <string name="emmctest_time_custom">Custom value :</string>    
+    <string name="emmctest_write_size_1024mb">1024 MB</string>
+    <string name="emmctest_write_size_2048mb">2048 MB</string>
+    <string name="emmctest_write_size_custom">Custom value :</string>
+    <string name="emmctest_swreset_time_1min">1 min</string>
+    <string name="emmctest_swreset_time_2min">2 mins</string>
+    <string name="emmctest_swreset_time_3min">3 mins</string>
+    <string name="emmctest_swreset_time_custom">Custom value :</string>      
+    <string name="emmctest_repeat">Repeat Count:</string>
+    <string name="emmctest_sleepresume">Sleep/Wakeup</string>
+    <string name="emmctest_randomwrite">Random Write</string>
+    <string name="emmctest_write">Sequential Write</string>    
+    <string name="emmctest_swreset">SW Reset</string>
+    <string name="emmctest_start">Start</string>
+    <string name="emmctest_stop">Stop</string>
+    <string name="emmctest_repeated">Repeated:</string>
+    <string name="emmctest_restore_default_settings">Restore default settings</string>
+    <string name="autorun">Autorun</string>
+</resources>

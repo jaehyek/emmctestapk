@@ -1,0 +1,1 @@
+adb shell am broadcast -a com.lge.emmctest.TEST_START_ACTION --include-stopped-packages --ez sleepwakeup true --ez randomwrite true --ez sequentialwrite true --el repeat 1000 --el sleep_time 10 --el wakeup_time 10 --el file_size 1024
